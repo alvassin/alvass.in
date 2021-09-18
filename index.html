@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
       html {
-        height: 100%;
+        min-height: 100%;
       }
       body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
+        min-height: 100%;
         font-family: 'Open Sans', sans-serif;
         background-color: #fefefe;
         color: #444;
@@ -32,20 +32,53 @@
       a:hover {
         text-decoration: none;
       }
+
+      ul {
+        list-style:none;
+        margin: 22px 0;
+        padding: 0;
+      }
+
+      @media screen and (min-width: 520px) {
+        ul {
+          display: flex;
+          justify-content: center;
+        }
+        li {
+          padding: 0 2px 0 0;
+        }
+        li::after {
+          padding-left: 2px;
+          content: "|"
+        }
+        li:last-child::after {
+          content: "";
+        }
+      }
+
+
+      @media screen and (max-width: 520px) {
+        ul {
+
+        }
+        li {
+          font-size: 26px;
+        }
+      }
     </style>
   </head>
   <body>
     <article>
-      <img src="/assets/photo.png" style="border-radius: 50%;width:400px;" alt="">
+      <img src="/assets/photo.png" style="border-radius: 50%;width:400px;height:400px;" alt="">
       <h1 style="font-size:36px;margin: 20px 0 0 0">Александр Васин</h1>
       <h2 style="font-size: 32px;margin: 5px 0 0 0">@alvassin</h2>
-      <p style="font-size: 22px;color: #333">
-        <a href="https://github.com/alvassin">Github</a> |
-        <a href="https://habr.ru/users/alvassin">Хабр</a> |
-        <a href="https://t.me/alvassin">Телеграм</a> |
-        <a href="https://t.me/alvassin_hub">Хаб</a> |
-        <a href="https://instagram.com/alvassin">Инстаграм</a>
-      </p>
+      <ul style="font-size: 22px;color: #333">
+        <li><a href="https://github.com/alvassin">Github</a></li>
+        <li><a href="https://habr.ru/users/alvassin">Хабр</a></li>
+        <li><a href="https://t.me/alvassin">Телеграм</a></li>
+        <li><a href="https://t.me/alvassin_hub">Хаб</a></li>
+        <li><a href="https://instagram.com/alvassin">Инстаграм</a></li>
+      </ul>
     </article>
   </body>
 </html>
