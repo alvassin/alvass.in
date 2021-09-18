@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
       html {
-        min-height: 100%;
-      }
-      body {
         display: flex;
+        min-height: 100%;
         flex-direction: column;
         justify-content: center;
+      }
+      body {
         min-height: 100%;
         font-family: 'Open Sans', sans-serif;
         background-color: #fefefe;
@@ -25,6 +25,14 @@
         margin: 0 auto;
         text-align: center;
       }
+      h1 {
+        font-size:36px;
+        margin: 20px 0 0 0;
+      }
+      h2 {
+        font-size: 32px;
+        margin: 5px 0 0 0;
+      }
       a {
         color: #333;
         text-decoration: underline;
@@ -32,16 +40,21 @@
       a:hover {
         text-decoration: none;
       }
-
+      img {
+        border-radius: 50%;
+        width:400px;
+        height:400px;
+      }
       ul {
         list-style:none;
         margin: 22px 0;
         padding: 0;
       }
-
       @media screen and (min-width: 520px) {
         ul {
+          color: #333;
           display: flex;
+          font-size: 22px;
           justify-content: center;
         }
         li {
@@ -55,8 +68,6 @@
           content: "";
         }
       }
-
-
       @media screen and (max-width: 520px) {
         li {
           font-size: 26px;
@@ -66,10 +77,10 @@
   </head>
   <body>
     <article>
-      <img src="/assets/photo.png" style="border-radius: 50%;width:400px;height:400px;" alt="">
-      <h1 style="font-size:36px;margin: 20px 0 0 0">Александр Васин</h1>
-      <h2 style="font-size: 32px;margin: 5px 0 0 0">@alvassin</h2>
-      <ul style="font-size: 22px;color: #333">
+      <img src="/assets/photo.png" alt="">
+      <h1>Александр Васин</h1>
+      <h2>@alvassin</h2>
+      <ul>
         <li><a href="https://github.com/alvassin">Github</a></li>
         <li><a href="https://habr.ru/users/alvassin">Хабр</a></li>
         <li><a href="https://t.me/alvassin">Телеграм</a></li>
